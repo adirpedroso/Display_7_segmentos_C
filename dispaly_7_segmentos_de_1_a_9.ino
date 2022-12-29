@@ -4,7 +4,7 @@ Exemplo para trabalhar com displays 7 segmentos
 
 */
 
-
+//Define as portas do digitais do arduino
 #define A 2
 #define B 3
 #define C 4
@@ -15,7 +15,7 @@ Exemplo para trabalhar com displays 7 segmentos
 #define DP 9
 
 byte cont = 0;
-
+//Cria uma matriz com 10 linhas e 7 colunas referentes a ordem correta para o acionamento do led referente ao numero que será plotado
 const byte tabela_7seg[10][7] = 
 { //A B C D E F G
   { 1,1,1,1,1,1,0},	//0
